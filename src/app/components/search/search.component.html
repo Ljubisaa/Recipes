@@ -1,10 +1,14 @@
 <div class="search-container">
     <form action="" class="search-form">
         <input 
+        #searchInput
+        (keyup.enter)="searchRecipes(searchInput.value)"
         class="search-input"
         name="search"
-        ngModel placeholder="Search recipes"
+        placeholder="Search recipes"
         />
-        <button class="search-button">Search</button>
+        <button class="search-button" 
+        (click)="searchRecipes(searchInput.value)"
+        type="submit">Search</button>
     </form>
 </div>

@@ -1,4 +1,12 @@
-<h1>Recipes: </h1>
-<ul *ngFor="let r of recipes">
-    <li>{{r.sourceName}}</li>
-</ul>
+<h2>Recipes:</h2>
+
+<div class="row">
+  <div class="column" *ngFor="let rec of recipe">
+    <img class="img" routerLink="/recipes/{{rec.id}}" src="{{rec.image}}" alt="Snow" style="width:100%">
+    <div class="content">
+        <h4 class="h4" routerLink="/recipes/{{rec.id}}">{{rec.title}}</h4>
+      </div>
+  </div>
+</div>
+
+

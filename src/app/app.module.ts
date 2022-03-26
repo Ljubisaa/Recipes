@@ -6,13 +6,15 @@ import { SearchComponent } from './components/search/search.component';
 import { HomeComponent } from './components/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { RecipeDetailsComponent } from './components/recipe-details/recipe-details.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
-    HomeComponent
+    HomeComponent,
+    RecipeDetailsComponent
   ],
   imports: [
     BrowserModule,
